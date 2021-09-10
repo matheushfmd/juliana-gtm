@@ -27,6 +27,16 @@
 			<button type="submit">Receber informações</button><br/>
 			<imput type="submit" name="" value="Rebecer mais infos">
 		</form>
+		<script type="text/javascript">
+			jQuery("form").on("submit", function(){
+				dataLayer.push({
+					event:"juliana"
+					nome: jQuery("#nome").val(),
+					email: jQuery(".email").val(),
+					h1: jQuery("h1").text()
+				})
+			})
+		</script>
 		<p><a href="https://matheushfmd.github.io/juliana-gtm/index.html">Voltar para Home</a></p>
 	</body>
 </html>		
